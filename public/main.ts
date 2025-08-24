@@ -14,4 +14,4 @@ async function fetchMessage(): Promise<void> {
   }
 }
 
-fetchMessage()
+fetchMessage();
