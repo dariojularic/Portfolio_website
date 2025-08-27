@@ -51,5 +51,37 @@ ul {
 }
 
 .about--paragraph {
-  width: 472px;
+  width: 480px;
 }
+
+.container--skills {
+  display: flex;
+  gap: 32px;
+}
+
+.skills-details-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.skills-img-container {
+  width: 50%;
+}
+
+.skills-img {
+  object-fit: cover;
+  width: 480px;
+  height: 420px;
+}
+
+.skills-paragraph {
+  width: 480px;
+  text-align: right;
+}
+
+.skills-section, .portfolio-section {
+  background-color: #161616;
+}
+
