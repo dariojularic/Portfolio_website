@@ -2,12 +2,13 @@
   --primary-color: #625E5E;
   --secondary-color: #333;
   --tertiary-color: #909090;
-
+  --text-color: #e9e8e8;
 }
 
 body {
   margin: 0;
-  background-color: #e9e8e8;
+  background-color: var(--text-color);
+  font-family: sans-serif
 }
 
 nav {
@@ -57,6 +58,7 @@ ul {
 .container--skills {
   display: flex;
   gap: 32px;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .skills-details-container {
@@ -83,5 +85,7 @@ ul {
 
 .skills-section, .portfolio-section {
   background-color: #161616;
+  color: var(--text-color);
 }
-
+/* Inter (woff2)
+sans-serif */
