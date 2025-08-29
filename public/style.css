@@ -113,11 +113,11 @@ li:hover {
   color: var(--text-color);
 }
 
-.fa-arrow-left, .fa-arrow-right {
+/* .fa-arrow-left, .fa-arrow-right {
   border: 2px solid var(--text-color);
   border-radius: 16px;
   padding: 8px 32px;
-}
+} */
 
 .heading-description, .portfolio-arrows-container {
   display: flex;
@@ -136,11 +136,21 @@ li:hover {
   margin: 24px 0;
 }
 
+.portfolio-arrows-container button {
+  cursor: pointer;
+  border: 2px solid var(--text-color);
+  border-radius: 16px;
+  padding: 8px 32px;
+  background-color: #161616;
+  color: #e9e8e8;
+}
+
 .projects-container {
   display: flex;
-  /* gap: 24px; */
+  gap: 24px;
   justify-content: space-between;
   margin-bottom: 64px;
+  overflow: hidden;
 }
 
 article {
