@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- <style>nav {background-color: red};</style> -->
-    <title>Portfolio Website</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <header>
@@ -185,9 +189,9 @@
 
       <section class="portfolio-section">
         <div class="container container--portfolio">
-          <div class="hading-description">
+          <div class="heading-description">
             <h2>PORTFOLIO</h2>
-            <p>
+            <p class="portfolio-description-paragraph">
               My portfolio showcases a range of projects that blend creativity
               and technical expertise. From sleek, responsive websites to
               dynamic web apps, each piece reflects my passion for clean code
@@ -195,12 +199,19 @@
             </p>
           </div>
 
-          <div class="portfolio-arrows-container"></div>
+          <div class="portfolio-arrows-container">
+            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
 
-          <div class="projects">
+          <div class="projects-container">
             <article>
               <div class="project-img-container">
-                <img src="/images/project_image1.png" alt="" />
+                <img
+                  src="/images/project_image1.png"
+                  class="project-img"
+                  alt=""
+                />
               </div>
 
               <div class="poject-details">
@@ -216,7 +227,11 @@
 
             <article>
               <div class="project-img-container">
-                <img src="/images/project_image2.png" alt="" />
+                <img
+                  src="/images/project_image2.png"
+                  class="project-img"
+                  alt=""
+                />
               </div>
 
               <div class="poject-details">
@@ -231,7 +246,11 @@
 
             <article>
               <div class="project-img-container">
-                <img src="/images/project_image3.png" alt="" />
+                <img
+                  src="/images/project_image3.png"
+                  class="project-img"
+                  alt=""
+                />
               </div>
 
               <div class="poject-details">
@@ -248,14 +267,30 @@
       </section>
 
       <section>
-        <h2>CONTACT</h2>
+        <div class="container container--contact">
+          <div class="contact-description">
+            <h2>CONTACT</h2>
+            <p class="contact-paragraph">
+              Got an idea? Let’s make it happen! Reach out to me, I’m excited to
+              hear about your project and bring it to life!
+            </p>
+          </div>
 
-        <address class="contact-options">GITHUB EMAIL LINKEDIN</address>
+          <address class="contact-options">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </address>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>Copyright (npr. "© 2025 Marko Horvat")</p>
+      <div class="container container--footer">
+        <div class="footer-paragraph-container">
+          <p>Copyright (npr. "© 2025 Marko Horvat")</p>
+        </div>
+      </div>
     </footer>
     <script src="/main.js">
       //zasto ovo ne radi?? console.log("blablab");

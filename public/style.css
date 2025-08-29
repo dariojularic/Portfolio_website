@@ -86,6 +86,72 @@ ul {
 .skills-section, .portfolio-section {
   background-color: #161616;
   color: var(--text-color);
+  margin-bottom: 48px;
 }
 /* Inter (woff2)
 sans-serif */
+.fa-arrow-left, .fa-arrow-right {
+  border: 2px solid var(--text-color);
+  border-radius: 16px;
+  padding: 8px 32px;
+}
+
+.heading-description, .portfolio-arrows-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-description-paragraph {
+  width: 476px;
+}
+
+.portfolio-arrows-container {
+  margin: 24px 0;
+}
+
+.projects-container {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+article {
+  width: 420px;
+  min-width: 420px;
+}
+
+.project-img-container {
+  width: 100%;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.container--contact, footer {
+  color: var(--primary-color);
+}
+
+.contact-description {
+  display: flex;
+  border-top: 1px solid var(--primary-color);
+  justify-content: space-between;
+}
+
+.footer-paragraph-container {
+  border-top: 1px solid var(--primary-color);
+
+}
+
+.contact-paragraph {
+  width: 476px;
+  font-size: 22px;
+}
+
+address {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  font-size: 40px;
+}
