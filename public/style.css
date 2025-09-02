@@ -150,7 +150,7 @@ li:hover {
   gap: 24px;
   justify-content: space-between;
   margin-bottom: 64px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 article {
