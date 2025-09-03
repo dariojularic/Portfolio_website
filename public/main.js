@@ -1,18 +1,5 @@
-// async function fetchMessage(): Promise<void> {
-//   try {
-//     const response = await fetch("http://localhost:8080");
+const aboutNavBtn = document.querySelector(".about-nav-btn")
+const skillsNavBtn = document.querySelector(".skills-nav-btn")
+const portfolioNavBtn = document.querySelector(".portfolio-nav-btn")
+const contactNavBtn = document.querySelector(".contact-nav-btn")
 
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-
-//     const data = await response.json();
-
-//     console.log("Message from server:", data.message);
-//   } catch (error) {
-//     console.error("There was a problem with the fetch operation:", error);
-//   }
-// }
-
-// fetchMessage();
-console.log("ggggggggggg");
