@@ -22,7 +22,7 @@ h1 {
   font-family: 'Instrument Serif', serif;
   font-weight: 400;
   width: 100%;
-  margin: 120px 0;
+  margin: 80px 0;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ p {
   font-size: 22px;
 }
 
-.container {
+.nav-container {
   padding: 16px 80px;
   box-sizing: border-box;
 }
@@ -52,6 +52,8 @@ nav {
   justify-content: space-between;
   color: var(--primary-color);
   border-bottom: 1px solid var(--tertiary-color);
+  padding: 16px 80px;
+  box-sizing: border-box;
 }
 
 ul {
@@ -77,6 +79,11 @@ li {
 li:hover {
   transition: scale 0.3s;
   scale: 1.2;
+}
+
+section {
+  padding: 16px 80px;
+  box-sizing: border-box;
 }
 
 /* Hero section */
@@ -110,6 +117,7 @@ li:hover {
   border: 1px solid var(--secondary-color);
   font-size: 16px;
   cursor: pointer;
+  min-width: max-content;
 }
 
 .contact-me-btn {
@@ -128,7 +136,7 @@ li:hover {
 .container--about {
   display: flex;
   gap: 48px;
-  padding: 64px 0;
+  /* padding: 64px 0; */
 }
 
 .about-img-container {
@@ -139,6 +147,9 @@ li:hover {
 
 .about-img {
   filter: grayscale(100%);
+  width: 480px;
+  height: 420px;
+  object-fit: cover;
 }
 
 .about-details-container {
@@ -240,18 +251,25 @@ article p {
 
 /* Contact Section */
 
+.container--contact {
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  box-sizing: border-box;
+  padding-bottom: 32px;
+}
+
 .container--contact, footer {
   color: var(--primary-color);
 }
 
 .contact-description {
   display: flex;
-  border-top: 1px solid var(--primary-color);
+  /* border-top: 1px solid var(--primary-color); */
   justify-content: space-between;
 }
 
 .footer-paragraph-container {
-  border-top: 1px solid var(--primary-color);
+  /* border-top: 1px solid var(--primary-color); */
   display: flex;
   justify-content: center;
 }
@@ -279,7 +297,7 @@ address i:hover {
   transition: 0.3s;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 768px) {
   h1 {
     margin: 40px 0;
     font-size: 140px;
@@ -287,6 +305,15 @@ address i:hover {
 
   h2 {
     width: max-content;
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
   }
 
   .container {
@@ -298,7 +325,7 @@ address i:hover {
     flex-direction: column-reverse;
   }
 
-  .hero--paragraph, .about--paragraph, .skills-paragraph, .portfolio-description-paragraph, .contact-paragraph {
+  .hero--paragraph, .about--paragraph, .skills-paragraph, .portfolio-description-paragraph, .contact-paragraph, article p {
     width: 100%;
     text-align: justify;
   }
@@ -352,17 +379,23 @@ address i:hover {
   }
 
 /* Portfolio section mobile */
+
+  .portfolio-arrows-container {
+    display: none;
+  }
+
   .portfolio-heading-description {
     flex-direction: column;
   }
 
   .projects-container {
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
   }
 
   article {
     width: 100%;
+    min-width: auto;
   }
 
   /* Contact section mobile */

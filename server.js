@@ -17,12 +17,14 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.listen(port, () => {
-  console.log("listening to port");
-});
+app.listen(port);
 
-// sta jos treba napravit na serveru?
 // css responsivness
-// ocu radit light/dark mode?
 // css animacija on scroll
+// pogledat intersectionObserver api - prvo neka radi na jednu sekciju
+//
+//
+
+
 // scrolanje projekata
+// ocu u verziji za mobitele stavit onaj hamburger button ili mozda bottom navi koja je stalno na dnu ekrana??
