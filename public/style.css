@@ -185,12 +185,12 @@ li:hover {
   color: var(--text-color);
 }
 
-.heading-description, .portfolio-arrows-container {
+.portfolio-heading-description, .portfolio-arrows-container {
   display: flex;
   justify-content: space-between;
 }
 
-.heading-description {
+.portfolio-heading-description {
   margin-bottom: 56px;
 }
 
@@ -222,6 +222,7 @@ li:hover {
 article {
   width: 420px;
   min-width: 420px;
+  cursor: pointer;
 }
 
 article p {
@@ -278,9 +279,10 @@ address i:hover {
   transition: 0.3s;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 920px) {
   h1 {
     margin: 40px 0;
+    font-size: 140px;
   }
 
   h2 {
@@ -294,6 +296,11 @@ address i:hover {
 
   .hero--details--container {
     flex-direction: column-reverse;
+  }
+
+  .hero--paragraph, .about--paragraph, .skills-paragraph, .portfolio-description-paragraph, .contact-paragraph {
+    width: 100%;
+    text-align: justify;
   }
 
   /* About section mobile */
@@ -315,11 +322,7 @@ address i:hover {
 
   .about-img {
     object-fit: contain;
-    width: 100%;
-  }
-
-  .about--paragraph {
-    width: 100%;
+    width: 95%;
   }
 
   /* Skills section mobile */
@@ -337,16 +340,34 @@ address i:hover {
 
   .skills-img-container {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.skills-img {
-  object-fit: contain;
-  width: 100%;
-  /* height: 420px; */
-}
-
-  .skills-paragraph {
-    text-align: left;
+  .skills-img {
+    object-fit: contain;
+    width: 95%;
+    height: auto;
   }
 
+/* Portfolio section mobile */
+  .portfolio-heading-description {
+    flex-direction: column;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  /* Contact section mobile */
+
+  .contact-description {
+    flex-direction: column;
+  }
 }
