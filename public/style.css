@@ -56,7 +56,6 @@ nav {
   justify-content: space-between;
   color: var(--primary-color);
   border-bottom: 1px solid var(--tertiary-color);
-  padding: 16px 80px;
   box-sizing: border-box;
 }
 
@@ -257,6 +256,10 @@ article p {
 }
 
 /* Contact Section */
+
+section {
+  padding: 4px 8px;
+}
 
 .container--contact {
   border-top: 1px solid var(--primary-color);
