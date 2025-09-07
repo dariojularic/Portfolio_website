@@ -2,6 +2,10 @@
 
 /* Gobal styling */
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: #625E5E;
   --secondary-color: #333;
@@ -41,10 +45,10 @@ p {
   font-size: 22px;
 }
 
-.nav-container {
+/* .nav-container {
   padding: 16px 80px;
   box-sizing: border-box;
-}
+} */
 /* Navigation */
 
 nav {
@@ -82,7 +86,7 @@ li:hover {
 }
 
 section {
-  padding: 16px 80px;
+  padding: 24px 80px;
   box-sizing: border-box;
 }
 
@@ -136,7 +140,6 @@ section {
 .container--about {
   display: flex;
   gap: 48px;
-  /* padding: 64px 0; */
 }
 
 .about-img-container {
@@ -147,9 +150,12 @@ section {
 
 .about-img {
   filter: grayscale(100%);
-  width: 480px;
-  height: 420px;
-  object-fit: cover;
+  /* width: 480px; */
+  width: 100%;
+  max-width: 480px;
+  /* height: 420px; */
+  object-fit: contain;
+  /* object-fit: cover; */
 }
 
 .about-details-container {
@@ -157,7 +163,7 @@ section {
 }
 
 .about--paragraph {
-  width: 480px;
+  max-width: 480px;
 }
 
 /* Skills section */
@@ -181,13 +187,14 @@ section {
 }
 
 .skills-img {
-  object-fit: cover;
-  width: 480px;
-  height: 420px;
+  object-fit: contain;
+  width: 100%;
+  max-width: 480px;
+  /* height: 420px; */
 }
 
 .skills-paragraph {
-  width: 480px;
+  max-width: 480px;
   text-align: right;
 }
 
@@ -328,6 +335,7 @@ address i:hover {
   .hero--paragraph, .about--paragraph, .skills-paragraph, .portfolio-description-paragraph, .contact-paragraph, article p {
     width: 100%;
     text-align: justify;
+    max-width: none;
   }
 
   /* About section mobile */
