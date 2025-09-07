@@ -257,9 +257,7 @@ article p {
 
 /* Contact Section */
 
-section {
-  padding: 4px 8px;
-}
+
 
 .container--contact {
   border-top: 1px solid var(--primary-color);
@@ -326,8 +324,12 @@ address i:hover {
     font-size: 18px;
   }
 
+  section {
+    padding: 32px 12px;
+  }
+
   .container {
-    padding: 8px 16px;
+    /* padding: 24px 8px; */
     width: 100%;
   }
 
@@ -360,7 +362,7 @@ address i:hover {
 
   .about-img {
     object-fit: contain;
-    width: 95%;
+    width: 100%;
   }
 
   /* Skills section mobile */
@@ -385,7 +387,7 @@ address i:hover {
 
   .skills-img {
     object-fit: contain;
-    width: 95%;
+    width: 100%;
     height: auto;
   }
 
@@ -413,5 +415,9 @@ address i:hover {
 
   .contact-description {
     flex-direction: column;
+  }
+
+  footer p {
+    font-size: 16px
   }
 }
