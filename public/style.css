@@ -87,6 +87,7 @@ li:hover {
 section {
   padding: 32px 80px;
   box-sizing: border-box;
+  margin-top: 200px;
 }
 
 /* Hero section */
@@ -136,10 +137,25 @@ section {
 
 /* ABOUT section */
 
+.about-section {
+  opacity: 0%;
+}
+
+.show {
+  opacity: 100%;
+  margin-top: 0;
+  transition: all 1s ease;
+}
+
 .container--about {
   display: flex;
   gap: 48px;
 }
+
+/* .show-about {
+  gap: 48px;
+  transition: gap 1s ease;
+} */
 
 .about-img-container {
   width: 50%;

@@ -9,8 +9,6 @@ const app = express();
 // pojasnit ovaj process.env.PORT
 const port = process.env.PORT || 8080;
 
-// googleat kako poslat html clientu
-
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {

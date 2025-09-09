@@ -30,3 +30,27 @@ contactNavBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Intersection Observer
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    // console.log(entries[0]);
+    const entry = entries[0];
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      console.log(entry.target.firstElementChild);
+      entry.target.firstElementChild.classList.add("show-about");
+      console.log(entry.target.firstElementChild);
+    }
+    // setTimeout(() => {
+    //   console.log("removed");
+    // }, 3000);
+  },
+  {
+    threshold: 0.5,
+    // rootMargin: "-200px",
+  }
+);
+
+observer.observe(aboutSection);
