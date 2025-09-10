@@ -95,6 +95,11 @@ section {
   /* margin-top: 200px; */
 }
 
+.container-show {
+  opacity: 0%;
+  margin-top: 100px;
+}
+
 /* Hero section */
 
 .hero--paragraph {
@@ -142,10 +147,7 @@ section {
 
 /* ABOUT section */
 
-.section-show {
-  opacity: 0%;
-  margin-top: 100px;
-}
+
 
 .show {
   opacity: 100%;

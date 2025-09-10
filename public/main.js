@@ -32,7 +32,7 @@ contactNavBtn.addEventListener("click", () => {
 });
 
 // Intersection Observer
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".container-show");
 const observer = new IntersectionObserver(
   (entries) => {
     console.log("entries", entries);
@@ -47,7 +47,7 @@ const observer = new IntersectionObserver(
     }
   },
   {
-    threshold: 0.5,
+    threshold: 0.3,
     // rootMargin: "-200px",
   }
 );
