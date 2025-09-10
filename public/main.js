@@ -35,10 +35,15 @@ contactNavBtn.addEventListener("click", () => {
 const sections = document.querySelectorAll(".section");
 const observer = new IntersectionObserver(
   (entries) => {
+    console.log("entries", entries);
     const entry = entries[0];
+    console.log("entry", entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-      console.log(entry.target.firstElementChild);
+      console.log(
+        "entry.target.firstElementChild",
+        entry.target.firstElementChild
+      );
     }
   },
   {
@@ -47,4 +52,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-observer.observe(aboutSection);
+sections.forEach( section =>
+  observer.observe(section)
+
+);
