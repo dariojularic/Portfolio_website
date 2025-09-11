@@ -1,11 +1,19 @@
+const heroNavBtn = document.querySelector(".hero-nav-btn")
 const aboutNavBtn = document.querySelector(".about-nav-btn");
 const skillsNavBtn = document.querySelector(".skills-nav-btn");
 const portfolioNavBtn = document.querySelector(".portfolio-nav-btn");
 const contactNavBtn = document.querySelector(".contact-nav-btn");
+const heroSection = document.querySelector(".section--hero")
 const aboutSection = document.querySelector(".about-section");
 const skillsSection = document.querySelector(".skills-section");
 const portfolioSection = document.querySelector(".portfolio-section");
 const contactSection = document.querySelector(".contact-section");
+
+heroNavBtn.addEventListener("click", () => {
+  heroSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
 
 aboutNavBtn.addEventListener("click", () => {
   aboutSection.scrollIntoView({
