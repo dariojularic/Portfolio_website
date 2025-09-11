@@ -91,6 +91,34 @@ li {
   transition: scale 0.3s;
 }
 
+ul li:nth-child(2) {
+  margin-left: auto;
+}
+
+.hero-nav-btn span {
+  display: none;
+}
+
+.about-nav-btn {
+  margin-left: auto;
+}
+
+.about-nav-btn svg {
+  display: none;
+}
+
+.skills-nav-btn svg {
+  display: none;
+}
+
+.portfolio-nav-btn svg {
+  display: none;
+}
+
+.contact-nav-btn svg {
+  display: none;
+}
+
 li:hover {
   transition: scale 0.3s;
   scale: 1.2;
@@ -428,7 +456,19 @@ address i:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
+
+  li span {
+    height: 20%;
+  }
+
+  li svg {
+    height: 75%;
+  }
+  /* .about-nav-btn svg {
+    height: 75%;
+  } */
 
   .fa-bars {
     font-size: 40px;
