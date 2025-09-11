@@ -60,6 +60,13 @@ nav {
   box-sizing: border-box;
 }
 
+/* vidjet ocu u nav imat dvije ul ili jednu */
+/* .nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+} */
+
 .burger-btn-container {
   display: none;
 }
