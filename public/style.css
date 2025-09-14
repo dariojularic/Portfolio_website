@@ -58,6 +58,17 @@ nav {
   color: var(--primary-color);
   border-bottom: 1px solid var(--tertiary-color);
   box-sizing: border-box;
+  width: 100%
+}
+
+.nav-btns-list {
+  width: 100%;
+  padding: 0;
+}
+
+.nav-btns-list span {
+  align-self: center;
+
 }
 
 /* vidjet ocu u nav imat dvije ul ili jednu */
@@ -89,6 +100,8 @@ li {
   cursor: pointer;
   scale: 1;
   transition: scale 0.3s;
+  display: flex;
+  align-items: center;
 }
 
 ul li:nth-child(2) {
@@ -466,6 +479,31 @@ address i:hover {
   li svg {
     height: 75%;
   }
+
+  /* .hero-nav-btn span {
+  display: none;
+}
+
+.about-nav-btn {
+  margin-left: auto;
+}
+
+.about-nav-btn svg {
+  display: none;
+}
+
+.skills-nav-btn svg {
+  display: none;
+}
+
+.portfolio-nav-btn svg {
+  display: none;
+}
+
+.contact-nav-btn svg {
+  display: none;
+} */
+
   /* .about-nav-btn svg {
     height: 75%;
   } */
