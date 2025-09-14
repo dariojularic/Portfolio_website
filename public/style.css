@@ -384,7 +384,7 @@ address i:hover {
 
 @media (max-width: 768px) {
   h1 {
-    margin: 40px 0;
+    margin-bottom: 40px;
     font-size: 140px;
   }
 
@@ -476,13 +476,17 @@ address i:hover {
   }
 
   li svg {
-    height: 48px;
+    height: 40px;
     fill: var(--secondary-color);
-    /* width: 72px; */
+    width: 40px;
   }
 
   .hero-nav-btn span {
     display: block;
+  }
+
+  .hero-nav-btn svg {
+    width: 64px;
   }
 
   .about-nav-btn {
@@ -606,7 +610,13 @@ address i:hover {
   }
 
   footer p {
-    font-size: 16px
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  footer {
+
+    padding-bottom: 64px;
   }
 
   .container--contact h2 {
