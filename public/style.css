@@ -18,7 +18,6 @@ body {
   background-color: var(--text-color);
   font-family: sans-serif;
   color: var(--primary-color);
-  /* overflow: hidden; */
 }
 
 h1 {
@@ -27,7 +26,6 @@ h1 {
   font-family: 'Instrument Serif', serif;
   font-weight: 400;
   width: 100%;
-  /* margin: 80px 0; */
   margin-bottom: 80px;
   margin-top: 0;
   text-align: center;
@@ -48,10 +46,6 @@ p {
   font-size: 22px;
 }
 
-/* .nav-container {
-  padding: 16px 80px;
-  box-sizing: border-box;
-} */
 /* Navigation */
 
 nav {
@@ -73,13 +67,6 @@ nav {
   align-self: center;
 
 }
-
-/* vidjet ocu u nav imat dvije ul ili jednu */
-/* .nav-list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-} */
 
 .burger-btn-container {
   display: none;
@@ -139,11 +126,10 @@ li:hover {
 section {
   padding: 32px 80px;
   box-sizing: border-box;
-  /* margin-top: 200px; */
 }
 
 .container-show {
-  opacity: 1%;
+  opacity: 0.1%;
   margin-top: 100px;
 }
 
@@ -207,11 +193,6 @@ section {
   gap: 48px;
 }
 
-/* .show-about {
-  gap: 48px;
-  transition: gap 1s ease;
-} */
-
 .about-img-container {
   width: 50%;
   display: flex;
@@ -220,12 +201,9 @@ section {
 
 .about-img {
   filter: grayscale(100%);
-  /* width: 480px; */
   width: 100%;
   max-width: 480px;
-  /* height: 420px; */
   object-fit: contain;
-  /* object-fit: cover; */
 }
 
 .about-details-container {
@@ -260,7 +238,6 @@ section {
   object-fit: contain;
   width: 100%;
   max-width: 480px;
-  /* height: 420px; */
 }
 
 .skills-paragraph {
@@ -349,12 +326,10 @@ article p {
 
 .contact-description {
   display: flex;
-  /* border-top: 1px solid var(--primary-color); */
   justify-content: space-between;
 }
 
 .footer-paragraph-container {
-  /* border-top: 1px solid var(--primary-color); */
   display: flex;
   justify-content: center;
 }
@@ -404,11 +379,9 @@ address i:hover {
 
   .section {
     padding: 24px 12px;
-    /* padding: 0 12px 24px 12px; */
   }
 
   .container {
-    /* padding: 24px 8px; */
     width: 100%;
   }
 
@@ -418,18 +391,6 @@ address i:hover {
     top: 16px;
     right: 16px;
   }
-
-  /* ovo je css za burger btn opciju */
-  /* nav {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 100%;
-    background-color: rgb(245, 91, 91);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } */
 
   nav {
     width: 100%;
@@ -445,7 +406,6 @@ address i:hover {
     justify-content: space-around;
     z-index: 50;
     box-shadow: 0 -6px 6px -1px rgba(0, 0, 0, 0.2), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
-    /* box-shadow: black 3px 2px; */
   }
 
   .nav-btns-list {
@@ -467,9 +427,18 @@ address i:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* width: 77px; */
     flex: 1;
   }
+
+  li:hover {
+    transition: none;
+    scale: 1;
+  }
+
+  li:active {
+    scale: 1.1;
+  }
+
 
   li span {
     height: 20%;
@@ -615,12 +584,10 @@ address i:hover {
   }
 
   footer {
-
     padding-bottom: 64px;
   }
 
   .container--contact h2 {
-    /* border-top: none; */
     margin-top: 24px;
   }
 }
