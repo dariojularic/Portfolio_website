@@ -440,8 +440,8 @@ address i:hover {
     border-top: 1px solid var(--primary-color);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    padding: 4px;
-    font-size: 14px;
+    padding: 8px 4px 8px 4px;
+    font-size: 12px;
     justify-content: space-around;
     z-index: 50;
     box-shadow: 0 -6px 6px -1px rgba(0, 0, 0, 0.2), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -476,9 +476,9 @@ address i:hover {
   }
 
   li svg {
-    height: 40px;
+    height: 36px;
     fill: var(--secondary-color);
-    width: 40px;
+    width: 36px;
   }
 
   .hero-nav-btn span {
