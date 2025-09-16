@@ -8,6 +8,13 @@ const aboutSection = document.querySelector(".about-section");
 const skillsSection = document.querySelector(".skills-section");
 const portfolioSection = document.querySelector(".portfolio-section");
 const contactSection = document.querySelector(".contact-section");
+const viewWorkBtn = document.querySelector(".view-work-btn")
+
+viewWorkBtn.addEventListener("click", () => {
+  portfolioSection.scrollIntoView({
+    behavior: "smooth",
+  });
+});
 
 heroNavBtn.addEventListener("click", () => {
   heroSection.scrollIntoView({

@@ -285,7 +285,7 @@ section {
   min-width: 1400px;
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 40px;
   transform: translateX(0px);
 }
 
@@ -314,8 +314,8 @@ section {
 }
 
 article {
-  width: 420px;
-  min-width: 420px;
+  width: 480px;
+  /* min-width: 420px; */
   cursor: pointer;
 }
 
