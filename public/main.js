@@ -1,9 +1,9 @@
-const heroNavBtn = document.querySelector(".hero-nav-btn")
+const heroNavBtn = document.querySelector(".hero-nav-btn");
 const aboutNavBtn = document.querySelector(".about-nav-btn");
 const skillsNavBtn = document.querySelector(".skills-nav-btn");
 const portfolioNavBtn = document.querySelector(".portfolio-nav-btn");
 const contactNavBtn = document.querySelector(".contact-nav-btn");
-const heroSection = document.querySelector(".section--hero")
+const heroSection = document.querySelector(".section--hero");
 const aboutSection = document.querySelector(".about-section");
 const skillsSection = document.querySelector(".skills-section");
 const portfolioSection = document.querySelector(".portfolio-section");
@@ -60,7 +60,17 @@ const observer = new IntersectionObserver(
   }
 );
 
-sections.forEach( section =>
-  observer.observe(section)
+sections.forEach((section) => observer.observe(section));
 
-);
+const splide = new Splide(".splide", {
+  type: "loop",
+  perPage: 3,
+  breakpoints: {
+    768: {
+      perPage: 1,
+    }
+  },
+  perMove: 1,
+});
+
+splide.mount();
