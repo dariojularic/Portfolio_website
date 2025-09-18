@@ -1,47 +1,34 @@
-const heroNavBtn = document.querySelector(".hero-nav-btn");
-const aboutNavBtn = document.querySelector(".about-nav-btn");
-const skillsNavBtn = document.querySelector(".skills-nav-btn");
-const portfolioNavBtn = document.querySelector(".portfolio-nav-btn");
-const contactNavBtn = document.querySelector(".contact-nav-btn");
 const heroSection = document.querySelector(".section--hero");
 const aboutSection = document.querySelector(".about-section");
 const skillsSection = document.querySelector(".skills-section");
 const portfolioSection = document.querySelector(".portfolio-section");
 const contactSection = document.querySelector(".contact-section");
-const viewWorkBtn = document.querySelector(".view-work-btn")
+const viewWorkBtn = document.querySelector(".view-work-btn");
+
+const navBtns = document.querySelectorAll(".nav-btn");
+
+// deploy onRender
+
+
+// a:link
+
+// jel bolje svaki <i> element zamjenit <svg> i zasto?
+// bijela crta izmedu skills i portfolio
+// ocu strelice stavit ispod projekta?
+
+navBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetId = button.dataset.target;
+    const section = document.querySelector(`.${targetId}`);
+    if (!section) return;
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 
 viewWorkBtn.addEventListener("click", () => {
   portfolioSection.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-heroNavBtn.addEventListener("click", () => {
-  heroSection.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-aboutNavBtn.addEventListener("click", () => {
-  aboutSection.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-skillsNavBtn.addEventListener("click", () => {
-  skillsSection.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-portfolioNavBtn.addEventListener("click", () => {
-  portfolioSection.scrollIntoView({
-    behavior: "smooth",
-  });
-});
-
-contactNavBtn.addEventListener("click", () => {
-  contactSection.scrollIntoView({
     behavior: "smooth",
   });
 });
@@ -50,15 +37,9 @@ contactNavBtn.addEventListener("click", () => {
 const sections = document.querySelectorAll(".container-show");
 const observer = new IntersectionObserver(
   (entries) => {
-    console.log("entries", entries);
     const entry = entries[0];
-    console.log("entry", entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-      console.log(
-        "entry.target.firstElementChild",
-        entry.target.firstElementChild
-      );
     }
   },
   {
@@ -75,7 +56,7 @@ const splide = new Splide(".splide", {
   breakpoints: {
     768: {
       perPage: 1,
-    }
+    },
   },
   perMove: 1,
 });
