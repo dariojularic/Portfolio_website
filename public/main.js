@@ -9,7 +9,6 @@ const navBtns = document.querySelectorAll(".nav-btn");
 
 // deploy onRender
 
-
 // a:link
 
 // jel bolje svaki <i> element zamjenit <svg> i zasto?
@@ -17,7 +16,8 @@ const navBtns = document.querySelectorAll(".nav-btn");
 // ocu strelice stavit ispod projekta?
 
 navBtns.forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
     const targetId = button.dataset.target;
     const section = document.querySelector(`.${targetId}`);
     if (!section) return;
