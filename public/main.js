@@ -53,6 +53,9 @@ sections.forEach((section) => observer.observe(section));
 const splide = new Splide(".splide", {
   type: "loop",
   perPage: 3,
+  autoplay: true,
+  interval: 5000,
+  pauseOnHover: true,
   breakpoints: {
     768: {
       perPage: 1,
