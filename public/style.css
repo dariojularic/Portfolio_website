@@ -283,8 +283,12 @@ section {
   min-width: 1800px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 0px;
   transform: translateX(0px);
+}
+
+.splide__slide {
+  width: 24%;
 }
 
 .splide__arrows {
@@ -311,7 +315,7 @@ section {
 }
 
 article {
-  width: 480px;
+  width: 440px;
   cursor: pointer;
 }
 
@@ -367,17 +371,19 @@ address {
   margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 96px;
-  font-size: 48px;
+  gap: 60px;
+}
+
+address a {
+  height: 48px;
+  width: 48px;
 }
 
 address svg {
-  height: 100%;
   fill: var(--primary-color);
   scale: 1;
   transition: 0.3s;
   cursor: pointer;
-  color: var(--primary-color)
 }
 
 address svg:hover {
