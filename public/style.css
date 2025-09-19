@@ -420,7 +420,7 @@ address i:hover {
 
   header {
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     z-index: 50;
