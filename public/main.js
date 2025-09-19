@@ -4,16 +4,7 @@ const skillsSection = document.querySelector(".skills-section");
 const portfolioSection = document.querySelector(".portfolio-section");
 const contactSection = document.querySelector(".contact-section");
 const viewWorkBtn = document.querySelector(".view-work-btn");
-
 const navBtns = document.querySelectorAll(".nav-btn");
-
-// deploy onRender
-
-// a:link
-
-// jel bolje svaki <i> element zamjenit <svg> i zasto?
-// bijela crta izmedu skills i portfolio
-// ocu strelice stavit ispod projekta?
 
 navBtns.forEach((button) => {
   button.addEventListener("click", (event) => {
@@ -33,7 +24,6 @@ viewWorkBtn.addEventListener("click", () => {
   });
 });
 
-// Intersection Observer
 const sections = document.querySelectorAll(".container-show");
 const observer = new IntersectionObserver(
   (entries) => {
@@ -44,7 +34,6 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.2,
-    // rootMargin: "-200px",
   }
 );
 
@@ -60,8 +49,8 @@ const splide = new Splide(".splide", {
   breakpoints: {
     768: {
       perPage: 1,
-      gap: 0,
-      interval: 6000,
+      gap: 40,
+      interval: 4000,
     },
   },
   perMove: 1,
