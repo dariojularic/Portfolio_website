@@ -367,18 +367,20 @@ address {
   margin-top: 24px;
   display: flex;
   justify-content: center;
-  gap: 64px;
+  gap: 96px;
   font-size: 48px;
 }
 
-address i {
+address svg {
+  height: 100%;
+  fill: var(--primary-color);
   scale: 1;
   transition: 0.3s;
   cursor: pointer;
   color: var(--primary-color)
 }
 
-address i:hover {
+address svg:hover {
   scale: 1.2;
   transition: 0.3s;
 }
