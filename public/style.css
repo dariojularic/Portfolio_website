@@ -375,6 +375,7 @@ address i {
   scale: 1;
   transition: 0.3s;
   cursor: pointer;
+  color: var(--primary-color)
 }
 
 address i:hover {
