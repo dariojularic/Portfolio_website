@@ -43,7 +43,7 @@ const observer = new IntersectionObserver(
     }
   },
   {
-    threshold: 0.3,
+    threshold: 0.2,
     // rootMargin: "-200px",
   }
 );
