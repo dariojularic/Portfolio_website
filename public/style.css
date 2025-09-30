@@ -334,14 +334,6 @@ article p {
 
 /* Contact Section */
 
-/* .fa-github {
-  color: black;
-}
-
-.fa-linkedin {
-  color: #0C61BF
-} */
-
 .container--contact {
   border-top: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
