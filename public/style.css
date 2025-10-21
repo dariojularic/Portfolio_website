@@ -68,11 +68,6 @@ nav {
 
 .nav-btns-list span {
   align-self: center;
-
-}
-
-.burger-btn-container {
-  display: none;
 }
 
 a {
@@ -162,7 +157,6 @@ section {
   font-size: 16px;
   cursor: pointer;
   min-width: max-content;
-
 }
 
 .contact-me-btn {
@@ -260,19 +254,6 @@ section {
 
 .portfolio-description-paragraph {
   width: 476px;
-}
-
-.portfolio-arrows-container {
-  margin: 24px 0;
-}
-
-.portfolio-arrows-container button {
-  cursor: pointer;
-  border: 2px solid var(--text-color);
-  border-radius: 16px;
-  padding: 8px 32px;
-  background-color: #161616;
-  color: #e9e8e8;
 }
 
 .splide__list {
@@ -406,13 +387,6 @@ address svg:hover {
 
   .container {
     width: 100%;
-  }
-
-  .burger-btn-container {
-    display: block;
-    position: fixed;
-    top: 16px;
-    right: 16px;
   }
 
   header {
@@ -587,10 +561,6 @@ address svg:hover {
 
   .portfolio-section {
     padding-bottom: 40px;
-  }
-
-  .portfolio-arrows-container {
-    display: none;
   }
 
   .portfolio-heading-description {
