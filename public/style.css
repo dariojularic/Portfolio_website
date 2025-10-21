@@ -345,8 +345,8 @@ address {
 }
 
 address a {
-  height: 48px;
-  width: 48px;
+  height: 64px;
+  width: 64px;
 }
 
 address svg {
@@ -585,6 +585,11 @@ address svg:hover {
 
 
   /* Contact section mobile */
+
+  address a {
+    height: 48px;
+    width: 48px;
+  }
 
   .contact-description {
     flex-direction: column;
